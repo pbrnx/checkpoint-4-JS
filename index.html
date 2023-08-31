@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Lista de Tarefas</title>
+  <script src="./js/ex2.js" defer></script>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form input, form button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <form id="form">
+      <input type="text" id="descricao" placeholder="Descrição">
+      <input type="text" id="autor" placeholder="Autor">
+      <input type="text" id="departamento" placeholder="Departamento">
+      <input type="text" id="importancia" placeholder="Importância">
+      <button type="submit">Adicionar Tarefa</button>
+    </form>
+    <ul id="tarefas"></ul>
+  </div>
+  
+</body>
+</html>
