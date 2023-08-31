@@ -52,6 +52,18 @@ li {
   border-bottom: 1px solid #ddd;
 }
 
+button{
+  margin: 15px;
+  background-color: rgb(255, 110, 110);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 1%;
+}
+
+button:hover{
+  background-color: red ;
+}
+
   </style>
 </head>
 <body>
@@ -61,7 +73,9 @@ li {
       <input type="text" id="descricao" placeholder="Descrição">
       <input type="text" id="autor" placeholder="Autor">
       <input type="text" id="departamento" placeholder="Departamento">
-      <input type="text" id="importancia" placeholder="Importância">
+      <input type="text" id="importancia" placeholder="Importância (Digite em números de 1-5)">
+      <input type="text" id="valor" placeholder="Valor">
+      <input type="text" id="duracao" placeholder="Duração">
       <button type="submit">Adicionar Tarefa</button>
     </form>
     <ul id="tarefas"></ul>
